@@ -1,0 +1,13 @@
+my $_buf = ""; my $_V;  $_buf .= q`<html>
+<head>
+<title>` . escape_xml($title ) . q`</title>
+</head>
+<body>
+<ul>
+`; for my $item (@$items) {
+ $_buf .= q`    <li>` . escape_xml($item->{iso_code} ) . q`</li>
+`; }
+ $_buf .= q`</ul>
+
+</body>
+`;  $_buf;

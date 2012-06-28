@@ -1,0 +1,471 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="html5.css" type="text/css" media="all" />
+</head>
+<body id="main">
+<ul>
+    <li>GL = Greenland 81, -108, 50, 22</li>
+    <li>DJ = Djibouti 12, 41, 11, 43</li>
+    <li>JM = Jamaica 18, -78, 17, -76</li>
+    <li>PG = Papua New Guinea -0, 135, -11, 152</li>
+    <li>AT = Austria 49, 10, 45, 18</li>
+    <li>KI = Kiribati 8, 174, -14, -152</li>
+    <li>SZ = Swaziland -25, 30, -27, 32</li>
+    <li>YT = Mayotte -12, 44, -13, 45</li>
+    <li>BN = Brunei 4, 114, 4, 115</li>
+    <li>ZM = Zambia -7, 19, -18, 36</li>
+    <li>CD = Congo, The Democratic Republic of the -3, 14, -5, 16</li>
+    <li>BW = Botswana -19, 20, -24, 28</li>
+    <li>AO = Angola -5, 9, -16, 26</li>
+    <li>ZW = Zimbabwe -16, 25, -21, 33</li>
+    <li>VC = Saint Vincent and the Grenadines 13, -61, 12, -60</li>
+    <li>PR = Puerto Rico 18, -67, 17, -65</li>
+    <li>JP = Japan 44, 121, 26, 154</li>
+    <li>NA = Namibia -17, 10, -28, 26</li>
+    <li>SH = Saint Helena -2, -42, -43, 22</li>
+    <li>TJ = Tajikistan 41, 67, 36, 75</li>
+    <li>LC = Saint Lucia 14, -61, 13, -60</li>
+    <li>MA = Morocco 36, -15, 26, 1</li>
+    <li>VU = Vanuatu -9, 158, -20, 175</li>
+    <li>MT = Malta 36, 14, 35, 14</li>
+    <li>SV = El Salvador 14, -89, 13, -87</li>
+    <li>MN = Mongolia 54, 87, 38, 120</li>
+    <li>MP = Northern Mariana Islands 27, 128, 6, 161</li>
+    <li>IT = Italy 45, 4, 37, 20</li>
+    <li>WS = Samoa -13, -172, -14, -171</li>
+    <li>FR = France 50, -5, 42, 10</li>
+    <li>EG = Egypt 31, 22, 21, 38</li>
+    <li>UZ = Uzbekistan 45, 56, 36, 72</li>
+    <li>PW = Palau 13, 126, 1, 142</li>
+    <li>TK = Tokelau -8, -172, -9, -171</li>
+    <li>LR = Liberia 7, -11, 5, -7</li>
+    <li>RW = Rwanda -1, 28, -2, 30</li>
+    <li>TN = Tunisia 36, 5, 31, 13</li>
+    <li>BE = Belgium 51, 2, 49, 6</li>
+    <li>EE = Estonia 60, 20, 57, 29</li>
+    <li>CK = Cook Islands -10, -176, -31, -143</li>
+    <li>BY = Belarus 55, 23, 51, 32</li>
+    <li>SA = Saudi Arabia 28, 36, 18, 53</li>
+    <li>NO = Norway 69, -24, 47, 41</li>
+    <li>LS = Lesotho -28, 26, -30, 30</li>
+    <li>KR = South Korea 38, 123, 33, 131</li>
+    <li>ZA = South Africa -25, 14, -35, 31</li>
+    <li>PT = Portugal 47, -24, 30, 8</li>
+    <li>BF = Burkina Faso 15, -5, 9, 2</li>
+    <li>CA = Canada 74, -171, 21, -40</li>
+    <li>AM = Armenia 41, 42, 38, 47</li>
+    <li>CM = Cameroon 12, 4, 1, 20</li>
+    <li>SR = Suriname 5, -58, 2, -53</li>
+    <li>MG = Madagascar -13, 38, -24, 55</li>
+    <li>NP = Nepal 30, 80, 25, 88</li>
+    <li>BT = Bhutan 28, 88, 26, 92</li>
+    <li>PL = Poland 55, 10, 48, 27</li>
+    <li>TM = Turkmenistan 43, 51, 34, 67</li>
+    <li>CF = Central African Republic 12, 12, 0, 29</li>
+    <li>GA = Gabon 2, 7, -3, 15</li>
+    <li>AE = United Arab Emirates 26, 49, 20, 57</li>
+    <li>BA = Bosnia and Herzegovina 44, 15, 42, 19</li>
+    <li>TH = Thailand 21, 92, 10, 109</li>
+    <li>KY = Cayman Islands 19, -81, 19, -80</li>
+    <li>LA = Laos 22, 98, 17, 106</li>
+    <li>CC = Cocos (Keeling) Islands -12, 96, -12, 96</li>
+    <li>PH = Philippines 18, 113, 7, 129</li>
+    <li>NI = Nicaragua 15, -89, 10, -81</li>
+    <li>TF = French Southern territories -48, 68, -49, 70</li>
+    <li>NC = New Caledonia -19, 163, -22, 167</li>
+    <li>GU = Guam 13, 144, 13, 145</li>
+    <li>KZ = Kazakstan 55, 50, 39, 83</li>
+    <li>SJ = Svalbard and Jan Mayen 84, -41, 62, 89</li>
+    <li>MM = Myanmar 27, 87, 16, 104</li>
+    <li>NR = Nauru -0, 166, -0, 166</li>
+    <li>NE = Niger 22, -0, 12, 16</li>
+    <li>DM = Dominica 15, -61, 15, -61</li>
+    <li>TO = Tonga -15, 176, -26, -167</li>
+    <li>MR = Mauritania 26, -19, 15, -2</li>
+    <li>AD = Andorra 42, 1, 42, 1</li>
+    <li>SE = Sweden 65, 2, 53, 35</li>
+    <li>AZ = Azerbaijan 42, 43, 37, 51</li>
+    <li>AF = Afghanistan 38, 59, 29, 75</li>
+    <li>GS = South Georgia and the South Sandwich Islands -38, -69, -65, -3</li>
+    <li>NG = Nigeria 14, 0, 3, 16</li>
+    <li>KE = Kenya 2, 33, -2, 42</li>
+    <li>BJ = Benin 12, -1, 6, 6</li>
+    <li>OM = Oman 24, 51, 18, 60</li>
+    <li>VN = Vietnam 19, 100, 8, 116</li>
+    <li>CI = C?te d&#39;Ivoire 10, -9, 4, -1</li>
+    <li>YE = Yemen 20, 40, 9, 56</li>
+    <li>DZ = Algeria 37, -14, 17, 18</li>
+    <li>LK = Sri Lanka 9, 78, 6, 82</li>
+    <li>ID = Indonesia 10, 97, -12, 130</li>
+    <li>FM = Micronesia, Federated States of 38, -77, 38, -77</li>
+    <li>GE = Georgia 34, -87, 29, -78</li>
+    <li>GM = Gambia 14, -16, 12, -14</li>
+    <li>CX = Christmas Island -10, 105, -10, 105</li>
+    <li>LV = Latvia 58, 20, 55, 28</li>
+    <li>RU = Russian Federation 76, 39, 31, 170</li>
+    <li>LB = Lebanon 34, 34, 33, 36</li>
+    <li>FK = Falkland Islands -48, -67, -55, -51</li>
+    <li>FI = Finland 66, 9, 56, 42</li>
+    <li>DE = Germany 54, 2, 47, 18</li>
+    <li>MV = Maldives 8, 65, -2, 81</li>
+    <li>LU = Luxembourg 50, 5, 49, 6</li>
+    <li>VE = Venezuela 12, -74, 0, -58</li>
+    <li>PN = Pitcairn -23, -130, -25, -124</li>
+    <li>BH = Bahrain 26, 50, 25, 51</li>
+    <li>GI = Gibraltar 36, -5, 36, -5</li>
+    <li>WF = Wallis and Futuna -10, 178, -16, -173</li>
+    <li>RO = Romania 47, 20, 43, 29</li>
+    <li>VI = Virgin Islands, U.S. 18, -65, 17, -64</li>
+    <li>TV = Tuvalu -1, 169, -12, -174</li>
+    <li>IN = India 30, 62, 9, 95</li>
+    <li>AR = Argentina -28, -80, -46, -47</li>
+    <li>SN = Senegal 17, -18, 11, -10</li>
+    <li>MX = Mexico 33, -118, 12, -86</li>
+    <li>AW = Aruba 12, -70, 12, -69</li>
+    <li>FO = Faroe Islands 62, -7, 61, -5</li>
+    <li>MC = Monaco 43, 7, 43, 7</li>
+    <li>HN = Honduras 17, -90, 12, -82</li>
+    <li>BR = Brazil 8, -84, -34, -19</li>
+    <li>IL = Israel 32, 32, 29, 36</li>
+    <li>SB = Solomon Islands -6, 156, -12, 164</li>
+    <li>PS = Palestine 39, -87, 38, -87</li>
+    <li>NZ = New Zealand -36, 166, -45, -176</li>
+    <li>HU = Hungary 49, 15, 45, 23</li>
+    <li>DO = Dominican Republic 20, -72, 17, -68</li>
+    <li>UG = Uganda 4, 28, -1, 36</li>
+    <li>KH = Cambodia 15, 100, 9, 109</li>
+    <li>TG = Togo 10, -1, 7, 2</li>
+    <li>GB = United Kingdom 66, -36, 40, 29</li>
+    <li>BB = Barbados 13, -59, 13, -59</li>
+    <li>HT = Haiti 20, -74, 17, -70</li>
+    <li>DK = Denmark 57, 5, 54, 13</li>
+    <li>PA = Panama 9, -82, 7, -78</li>
+    <li>QA = Qatar 25, 50, 24, 52</li>
+    <li>CV = Cape Verde 17, -26, 14, -21</li>
+    <li>GD = Grenada 12, -61, 12, -61</li>
+    <li>MO = Macao 22, 113, 22, 113</li>
+    <li>KM = Comoros -11, 42, -12, 44</li>
+    <li>HR = Croatia 47, 11, 43, 19</li>
+    <li>TC = Turks and Caicos Islands 22, -72, 21, -71</li>
+    <li>CZ = Czech Republic 51, 11, 47, 19</li>
+    <li>MZ = Mozambique -13, 27, -23, 43</li>
+    <li>ES = Spain 45, -12, 35, 5</li>
+    <li>BO = Bolivia -10, -71, -21, -55</li>
+    <li>ST = Sao Tome and Principe 1, 4, -1, 8</li>
+    <li>AU = Australia -3, 100, -43, 166</li>
+    <li>AL = Albania 42, 18, 40, 22</li>
+    <li>IR = Iran 37, 45, 27, 61</li>
+    <li>CG = Congo 2, 11, -3, 19</li>
+    <li>TR = Turkey 43, 27, 34, 43</li>
+    <li>MD = Moldova 48, 26, 46, 30</li>
+    <li>BI = Burundi -2, 28, -4, 30</li>
+    <li>GN = Guinea 12, -13, 7, -5</li>
+    <li>GW = Guinea-Bissau 13, -17, 10, -13</li>
+    <li>MK = Macedonia 42, 20, 41, 22</li>
+    <li>GR = Greece 43, 13, 34, 30</li>
+    <li>AG = Antigua and Barbuda 17, -62, 16, -61</li>
+    <li>SI = Slovenia 47, 12, 45, 17</li>
+    <li>CO = Colombia 10, -82, -1, -66</li>
+    <li>AI = Anguilla 18, -63, 17, -62</li>
+    <li>AQ = Antarctica -24, -131, -86, 131</li>
+    <li>JO = Jordan 33, 32, 28, 40</li>
+    <li>SM = San Marino 43, 12, 43, 12</li>
+    <li>UA = Ukraine 52, 22, 44, 39</li>
+    <li>CL = Chile -15, -104, -51, -38</li>
+    <li>CU = Cuba 24, -81, 18, -73</li>
+    <li>EH = Western Sahara 26, -16, 21, -8</li>
+    <li>KN = Saint Kitts and Nevis 17, -63, 17, -62</li>
+    <li>ML = Mali 22, -12, 12, 4</li>
+    <li>SC = Seychelles 6, 39, -15, 71</li>
+    <li>ET = Ethiopia 14, 32, 3, 48</li>
+    <li>IS = Iceland 73, -51, 53, 13</li>
+    <li>MS = Montserrat 16, -62, 16, -62</li>
+    <li>NL = Netherlands 53, 3, 51, 7</li>
+    <li>EC = Ecuador 3, -86, -7, -69</li>
+    <li>HK = Hong Kong 22, 113, 22, 114</li>
+    <li>MY = Malaysia 9, 93, -1, 110</li>
+    <li>CR = Costa Rica 11, -85, 8, -81</li>
+    <li>SD = Sudan 18, 22, 7, 38</li>
+    <li>CN = China 52, 71, 15, 136</li>
+    <li>BG = Bulgaria 44, 21, 40, 29</li>
+    <li>MH = Marshall Islands 18, 154, -4, -172</li>
+    <li>UY = Uruguay -30, -59, -34, -51</li>
+    <li>PY = Paraguay -20, -62, -26, -54</li>
+    <li>BS = Bahamas 27, -81, 22, -73</li>
+    <li>MU = Mauritius -18, 55, -21, 59</li>
+    <li>CH = Switzerland 47, 6, 45, 10</li>
+    <li>LI = Liechtenstein 47, 9, 47, 9</li>
+    <li>GH = Ghana 10, -5, 5, 3</li>
+    <li>NU = Niue -18, -169, -19, -169</li>
+    <li>US = United States 64, -161, -5, -30</li>
+    <li>PE = Peru -3, -83, -14, -66</li>
+    <li>SL = Sierra Leone 9, -13, 7, -9</li>
+    <li>BZ = Belize 18, -90, 15, -86</li>
+    <li>CY = Cyprus 35, 32, 34, 34</li>
+    <li>FJ = Fiji Islands -17, 177, -18, 178</li>
+    <li>IE = Ireland 55, -12, 51, -4</li>
+    <li>TW = Taiwan 24, 118, 22, 123</li>
+    <li>KP = North Korea 42, 123, 38, 131</li>
+    <li>PF = French Polynesia 26, 145, -53, -83</li>
+    <li>ER = Eritrea 17, 35, 12, 43</li>
+    <li>IQ = Iraq 37, 35, 28, 51</li>
+    <li>AS = American Samoa -13, -171, -14, -169</li>
+    <li>TZ = Tanzania -0, 26, -12, 43</li>
+    <li>MW = Malawi -10, 30, -16, 38</li>
+    <li>LY = Libyan Arab Jamahiriya 31, 9, 21, 25</li>
+    <li>GT = Guatemala 17, -92, 14, -88</li>
+    <li>GY = Guyana 7, -63, 2, -54</li>
+    <li>BM = Bermuda 32, -64, 32, -64</li>
+    <li>GQ = Equatorial Guinea 4, 6, -1, 14</li>
+    <li>PK = Pakistan 35, 61, 25, 77</li>
+    <li>LT = Lithuania 56, 19, 53, 27</li>
+    <li>SG = Singapore 1, 103, 1, 104</li>
+    <li>PM = Saint Pierre and Miquelon 47, -56, 46, -55</li>
+    <li>TT = Trinidad and Tobago 11, -62, 9, -60</li>
+    <li>NF = Norfolk Island -29, 167, -29, 167</li>
+    <li>TD = Chad 20, 10, 9, 26</li>
+    <li>SO = Somalia 10, 38, -0, 54</li>
+    <li>SY = Syria 37, 34, 32, 43</li>
+    <li>SK = Slovakia 49, 17, 47, 21</li>
+    <li>BD = Bangladesh 26, 86, 21, 94</li>
+</ul>
+<canvas id="html5canvas" width="1000" height="500"></canvas>
+<script>
+var canvas = document.getElementById('html5canvas');
+if (canvas.getContext) {
+    var context = canvas.getContext("2d");
+    
+    context.strokeStyle = '#f00'; // red
+    context.lineWidth   = 1;
+
+    context.rect(81, -108, 50, 22);
+    context.rect(12, 41, 11, 43);
+    context.rect(18, -78, 17, -76);
+    context.rect(-0, 135, -11, 152);
+    context.rect(49, 10, 45, 18);
+    context.rect(8, 174, -14, -152);
+    context.rect(-25, 30, -27, 32);
+    context.rect(-12, 44, -13, 45);
+    context.rect(4, 114, 4, 115);
+    context.rect(-7, 19, -18, 36);
+    context.rect(-3, 14, -5, 16);
+    context.rect(-19, 20, -24, 28);
+    context.rect(-5, 9, -16, 26);
+    context.rect(-16, 25, -21, 33);
+    context.rect(13, -61, 12, -60);
+    context.rect(18, -67, 17, -65);
+    context.rect(44, 121, 26, 154);
+    context.rect(-17, 10, -28, 26);
+    context.rect(-2, -42, -43, 22);
+    context.rect(41, 67, 36, 75);
+    context.rect(14, -61, 13, -60);
+    context.rect(36, -15, 26, 1);
+    context.rect(-9, 158, -20, 175);
+    context.rect(36, 14, 35, 14);
+    context.rect(14, -89, 13, -87);
+    context.rect(54, 87, 38, 120);
+    context.rect(27, 128, 6, 161);
+    context.rect(45, 4, 37, 20);
+    context.rect(-13, -172, -14, -171);
+    context.rect(50, -5, 42, 10);
+    context.rect(31, 22, 21, 38);
+    context.rect(45, 56, 36, 72);
+    context.rect(13, 126, 1, 142);
+    context.rect(-8, -172, -9, -171);
+    context.rect(7, -11, 5, -7);
+    context.rect(-1, 28, -2, 30);
+    context.rect(36, 5, 31, 13);
+    context.rect(51, 2, 49, 6);
+    context.rect(60, 20, 57, 29);
+    context.rect(-10, -176, -31, -143);
+    context.rect(55, 23, 51, 32);
+    context.rect(28, 36, 18, 53);
+    context.rect(69, -24, 47, 41);
+    context.rect(-28, 26, -30, 30);
+    context.rect(38, 123, 33, 131);
+    context.rect(-25, 14, -35, 31);
+    context.rect(47, -24, 30, 8);
+    context.rect(15, -5, 9, 2);
+    context.rect(74, -171, 21, -40);
+    context.rect(41, 42, 38, 47);
+    context.rect(12, 4, 1, 20);
+    context.rect(5, -58, 2, -53);
+    context.rect(-13, 38, -24, 55);
+    context.rect(30, 80, 25, 88);
+    context.rect(28, 88, 26, 92);
+    context.rect(55, 10, 48, 27);
+    context.rect(43, 51, 34, 67);
+    context.rect(12, 12, 0, 29);
+    context.rect(2, 7, -3, 15);
+    context.rect(26, 49, 20, 57);
+    context.rect(44, 15, 42, 19);
+    context.rect(21, 92, 10, 109);
+    context.rect(19, -81, 19, -80);
+    context.rect(22, 98, 17, 106);
+    context.rect(-12, 96, -12, 96);
+    context.rect(18, 113, 7, 129);
+    context.rect(15, -89, 10, -81);
+    context.rect(-48, 68, -49, 70);
+    context.rect(-19, 163, -22, 167);
+    context.rect(13, 144, 13, 145);
+    context.rect(55, 50, 39, 83);
+    context.rect(84, -41, 62, 89);
+    context.rect(27, 87, 16, 104);
+    context.rect(-0, 166, -0, 166);
+    context.rect(22, -0, 12, 16);
+    context.rect(15, -61, 15, -61);
+    context.rect(-15, 176, -26, -167);
+    context.rect(26, -19, 15, -2);
+    context.rect(42, 1, 42, 1);
+    context.rect(65, 2, 53, 35);
+    context.rect(42, 43, 37, 51);
+    context.rect(38, 59, 29, 75);
+    context.rect(-38, -69, -65, -3);
+    context.rect(14, 0, 3, 16);
+    context.rect(2, 33, -2, 42);
+    context.rect(12, -1, 6, 6);
+    context.rect(24, 51, 18, 60);
+    context.rect(19, 100, 8, 116);
+    context.rect(10, -9, 4, -1);
+    context.rect(20, 40, 9, 56);
+    context.rect(37, -14, 17, 18);
+    context.rect(9, 78, 6, 82);
+    context.rect(10, 97, -12, 130);
+    context.rect(38, -77, 38, -77);
+    context.rect(34, -87, 29, -78);
+    context.rect(14, -16, 12, -14);
+    context.rect(-10, 105, -10, 105);
+    context.rect(58, 20, 55, 28);
+    context.rect(76, 39, 31, 170);
+    context.rect(34, 34, 33, 36);
+    context.rect(-48, -67, -55, -51);
+    context.rect(66, 9, 56, 42);
+    context.rect(54, 2, 47, 18);
+    context.rect(8, 65, -2, 81);
+    context.rect(50, 5, 49, 6);
+    context.rect(12, -74, 0, -58);
+    context.rect(-23, -130, -25, -124);
+    context.rect(26, 50, 25, 51);
+    context.rect(36, -5, 36, -5);
+    context.rect(-10, 178, -16, -173);
+    context.rect(47, 20, 43, 29);
+    context.rect(18, -65, 17, -64);
+    context.rect(-1, 169, -12, -174);
+    context.rect(30, 62, 9, 95);
+    context.rect(-28, -80, -46, -47);
+    context.rect(17, -18, 11, -10);
+    context.rect(33, -118, 12, -86);
+    context.rect(12, -70, 12, -69);
+    context.rect(62, -7, 61, -5);
+    context.rect(43, 7, 43, 7);
+    context.rect(17, -90, 12, -82);
+    context.rect(8, -84, -34, -19);
+    context.rect(32, 32, 29, 36);
+    context.rect(-6, 156, -12, 164);
+    context.rect(39, -87, 38, -87);
+    context.rect(-36, 166, -45, -176);
+    context.rect(49, 15, 45, 23);
+    context.rect(20, -72, 17, -68);
+    context.rect(4, 28, -1, 36);
+    context.rect(15, 100, 9, 109);
+    context.rect(10, -1, 7, 2);
+    context.rect(66, -36, 40, 29);
+    context.rect(13, -59, 13, -59);
+    context.rect(20, -74, 17, -70);
+    context.rect(57, 5, 54, 13);
+    context.rect(9, -82, 7, -78);
+    context.rect(25, 50, 24, 52);
+    context.rect(17, -26, 14, -21);
+    context.rect(12, -61, 12, -61);
+    context.rect(22, 113, 22, 113);
+    context.rect(-11, 42, -12, 44);
+    context.rect(47, 11, 43, 19);
+    context.rect(22, -72, 21, -71);
+    context.rect(51, 11, 47, 19);
+    context.rect(-13, 27, -23, 43);
+    context.rect(45, -12, 35, 5);
+    context.rect(-10, -71, -21, -55);
+    context.rect(1, 4, -1, 8);
+    context.rect(-3, 100, -43, 166);
+    context.rect(42, 18, 40, 22);
+    context.rect(37, 45, 27, 61);
+    context.rect(2, 11, -3, 19);
+    context.rect(43, 27, 34, 43);
+    context.rect(48, 26, 46, 30);
+    context.rect(-2, 28, -4, 30);
+    context.rect(12, -13, 7, -5);
+    context.rect(13, -17, 10, -13);
+    context.rect(42, 20, 41, 22);
+    context.rect(43, 13, 34, 30);
+    context.rect(17, -62, 16, -61);
+    context.rect(47, 12, 45, 17);
+    context.rect(10, -82, -1, -66);
+    context.rect(18, -63, 17, -62);
+    context.rect(-24, -131, -86, 131);
+    context.rect(33, 32, 28, 40);
+    context.rect(43, 12, 43, 12);
+    context.rect(52, 22, 44, 39);
+    context.rect(-15, -104, -51, -38);
+    context.rect(24, -81, 18, -73);
+    context.rect(26, -16, 21, -8);
+    context.rect(17, -63, 17, -62);
+    context.rect(22, -12, 12, 4);
+    context.rect(6, 39, -15, 71);
+    context.rect(14, 32, 3, 48);
+    context.rect(73, -51, 53, 13);
+    context.rect(16, -62, 16, -62);
+    context.rect(53, 3, 51, 7);
+    context.rect(3, -86, -7, -69);
+    context.rect(22, 113, 22, 114);
+    context.rect(9, 93, -1, 110);
+    context.rect(11, -85, 8, -81);
+    context.rect(18, 22, 7, 38);
+    context.rect(52, 71, 15, 136);
+    context.rect(44, 21, 40, 29);
+    context.rect(18, 154, -4, -172);
+    context.rect(-30, -59, -34, -51);
+    context.rect(-20, -62, -26, -54);
+    context.rect(27, -81, 22, -73);
+    context.rect(-18, 55, -21, 59);
+    context.rect(47, 6, 45, 10);
+    context.rect(47, 9, 47, 9);
+    context.rect(10, -5, 5, 3);
+    context.rect(-18, -169, -19, -169);
+    context.rect(64, -161, -5, -30);
+    context.rect(-3, -83, -14, -66);
+    context.rect(9, -13, 7, -9);
+    context.rect(18, -90, 15, -86);
+    context.rect(35, 32, 34, 34);
+    context.rect(-17, 177, -18, 178);
+    context.rect(55, -12, 51, -4);
+    context.rect(24, 118, 22, 123);
+    context.rect(42, 123, 38, 131);
+    context.rect(26, 145, -53, -83);
+    context.rect(17, 35, 12, 43);
+    context.rect(37, 35, 28, 51);
+    context.rect(-13, -171, -14, -169);
+    context.rect(-0, 26, -12, 43);
+    context.rect(-10, 30, -16, 38);
+    context.rect(31, 9, 21, 25);
+    context.rect(17, -92, 14, -88);
+    context.rect(7, -63, 2, -54);
+    context.rect(32, -64, 32, -64);
+    context.rect(4, 6, -1, 14);
+    context.rect(35, 61, 25, 77);
+    context.rect(56, 19, 53, 27);
+    context.rect(1, 103, 1, 104);
+    context.rect(47, -56, 46, -55);
+    context.rect(11, -62, 9, -60);
+    context.rect(-29, 167, -29, 167);
+    context.rect(20, 10, 9, 26);
+    context.rect(10, 38, -0, 54);
+    context.rect(37, 34, 32, 43);
+    context.rect(49, 17, 47, 21);
+    context.rect(26, 86, 21, 94);
+    context.stroke();
+}
+</script>
+
+</ul>
+</body>

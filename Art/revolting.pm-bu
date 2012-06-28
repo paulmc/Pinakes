@@ -1,0 +1,146 @@
+package Pinakes::Art::revolting; 
+use strict;
+use warnings;
+
+#use Apache::Constants qw(:common);
+use DBIx::Simple;
+use CGI;
+use Data::Dumper;
+
+use Pinakes::Utils::DB;
+use aliased 'Pinakes::Utils::CountryInfo';
+use v5.10;
+use Tenjin;
+
+handler() if -t and !caller();
+
+sub handler
+{
+    my $r = shift;
+
+    MAIN:
+    {
+        my $user                     = "root";
+        my $password                 = "mysql";
+
+        my $two_letter_country_codes;
+        my $latlong_coords;
+        my $geobox_coords;
+        my $country_names;
+        my $width = 3600;
+        my $height = 1800;
+
+        my %country_hash = ();
+        my %values;
+
+        my $q = CGI->new;
+        my $db = Pinakes::Utils::DB->create_connection;
+
+        if($q->param('latlong'))
+        {
+            $values{latlong} = 1;
+        }
+        $two_letter_country_codes   = return_country_codes_array($db);
+        $latlong_coords             = return_country_latlong($db, $width, $height);
+        $geobox_coords              = return_country_geobox_posxnegy($db, 1, $width, $height);
+        $country_names              = return_country_names($db);
+#print Dumper($latlong_coords); last MAIN;
+        foreach my $cc (@$two_letter_country_codes)
+        {
+            $country_hash{$cc} = CountryInfo->new(
+                    'country_name'            => $country_names->{$cc},
+                    'latlong'                 => $latlong_coords->{$cc},
+                    'square_coords'           => $geobox_coords->{$cc},
+                    'square_coords_wholeNume' => $geobox_coords->{$cc},
+                    );
+        }
+        $values{country_hash} = \%country_hash;
+        $db->disconnect();
+
+
+        my $output = do{
+            my %options = ( 'cache' => 0 );
+            my $engine = Tenjin->new(\%options);
+            my $context = \%values;
+            my $filename = '/home/paul/public_html/art.datacreations.co.uk/public/revolt.html';
+            $engine->render($filename, $context);
+        };
+        print $q->header('text/html'),  $output;
+    }
+    return "OK";
+}
+
+sub return_country_codes_array
+{
+    my ($db) = @_;
+    my @codes = $db->query("SELECT Code2 FROM Country WHERE latlong != ''")->flat;
+    return \@codes;
+}
+
+sub return_country_names
+{
+    my ($db) = @_;
+    my %return_hash = ();
+    for my $row ($db->query("SELECT  `code2`, `name` FROM Country WHERE latlong != ''")->hashes) 
+    {
+        next if $row->{code2} eq '';
+        $return_hash{$row->{code2}} = $row->{name};
+    }
+    return \%return_hash;
+}
+
+sub return_country_latlong
+{
+    my ($db, $wholeNums) = @_;
+    my %return_hash = ();
+    for my $row ($db->query("SELECT  `code2`, AsText(`latlong`) as latlong FROM Country WHERE latlong != '' LIMIT 5")->hashes) 
+    {
+        next if $row->{code2} eq '';
+        next if $row->{latlong} eq '';
+        $row->{latlong} =~ s/[A-Z]+//;
+        $row->{latlong} =~ s/ /,/;
+        $row->{latlong} =~ s/\.[0-9]+//g if defined($wholeNums);
+        $return_hash{$row->{code2}} = $row->{latlong};
+    }
+
+    return \%return_hash;
+}
+
+sub return_country_geobox
+{
+    my ($db, $wholeNums) = @_;
+    my %return_hash = ();
+    for my $row ($db->query("SELECT `code2`, `box_east`, `box_north`, `box_west`, `box_south` FROM Country WHERE latlong != ''")->hashes) 
+#for my $row ($db->query("SELECT `code2`, AsText(`latlong`) AS `latlong`, `box_north`, `box_west`, `box_south`, `box_east` FROM Country WHERE latlong != ''")->hashes) 
+    {
+        next if $row->{code2} eq '';
+        for ($row->{box_west}, $row->{box_north}, $row->{box_east},  $row->{box_south}) { s/\.[0-9]+//g } #if defined($wholeNums);
+
+#$return_hash{$row->{code2}} = join(', ', $row->{latlong}, $row->{box_north}, $row->{box_west}, $row->{box_south}, $row->{box_east});
+    }
+
+    return \%return_hash;
+}
+
+# translate the geobox to posx negy (a standard monitor starts from top left)
+sub return_country_geobox_posxnegy
+{
+    my ($db, $wholeNums, $width, $height) = @_;
+    my %return_hash = ();
+    for my $row ($db->query("SELECT `code2`, `box_west`, `box_north`, `box_south`, `box_east` FROM Country WHERE latlong != ''  LIMIT 5, 50")->hashes) 
+    #for my $row ($db->query("SELECT `code2`, AsText(`latlong`) AS `latlong`, `box_north`, `box_west`, `box_south`, `box_east` FROM Country WHERE latlong != ''")->hashes) 
+    {
+        next if $row->{code2} eq '';
+        for ($row->{box_west}, $row->{box_north}, $row->{box_east},  $row->{box_south}) { s/\.[0-9]+//g } #if defined($wholeNums);
+        #($row->{box_west}, $row->{box_east}) = map{ $_ += $width/2; } 1 .. 2;
+        $row->{box_west}  += $width/2; 
+        $row->{box_east}  += $width/2; 
+        $row->{box_north}  += $width/2 - $row->{box_north}; 
+        $row->{box_south}  += $width/2 - $row->{box_south}; 
+
+        $return_hash{$row->{code2}} = join(',',  $row->{box_west}, $row->{box_north}, $row->{box_east}, $row->{box_south});
+    }
+
+    return \%return_hash;
+}
+1;

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="html5.css" type="text/css" media="all" />
+</head>
+<body id="main">
+<ul>
+    <li>GL = Greenland 81, -108, 50, 22</li>
+    <li>IT = Italy 45, 4, 37, 20</li>
+    <li>AU = Australia -3, 100, -43, 166</li>
+</ul>
+<canvas id="html5canvas" width="1000" height="500"></canvas>
+<script>
+var canvas = document.getElementById('html5canvas');
+if (canvas.getContext) {
+    var context = canvas.getContext("2d");
+    
+    context.strokeStyle = '#f00'; // red
+    context.lineWidth   = 1;
+
+    //context.rect(81, -108, 50, 22);
+    context.rect(45, 4, 37, 20);
+    //context.rect(-3, 100, -43, 166);
+    context.stroke();
+}
+</script>
+
+</ul>
+</body>
